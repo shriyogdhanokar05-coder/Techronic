@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#ffdad6", "surface-bright": "#38393f", "surface-dim": "#121318", "on-secondary-fixed": "#2c0051", "on-secondary-fixed-variant": "#6900b3", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#653e00", "primary-container": "#00f2fe", "on-surface-variant": "#b9cacb", "inverse-surface": "#e3e1e9", "on-secondary-container": "#d6a9ff", "outline-variant": "#3a494b", "tertiary": "#fff5ee", "on-primary": "#00373a", "on-tertiary": "#472a00", "surface-tint": "#00dce6", "secondary-fixed": "#f0dbff", "on-surface": "#e3e1e9", "primary": "#e0fdff", "secondary": "#ddb7ff", "secondary-fixed-dim": "#ddb7ff", "inverse-on-surface": "#2f3036", "background": "#121318", "surface-container-low": "#1a1b21", "secondary-container": "#6f00be", "inverse-primary": "#00696f", "surface-container-high": "#292a2f", "on-tertiary-fixed": "#2a1700", "surface-variant": "#34343a", "surface-container": "#1e1f25", "on-primary-fixed-variant": "#004f53", "error-container": "#93000a", "on-primary-container": "#006a70", "tertiary-container": "#ffd3a1", "on-primary-fixed": "#002022", "on-tertiary-container": "#875400", "primary-fixed-dim": "#00dce6", "surface-container-lowest": "#0d0e13", "on-error": "#690005", "tertiary-fixed": "#ffddb8", "outline": "#849495", "surface": "#121318", "tertiary-fixed-dim": "#ffb95f", "on-secondary": "#490080", "on-background": "#e3e1e9", "primary-fixed": "#6ff6ff", "surface-container-highest": "#34343a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "gutter-tablet": "1rem", "grid-margin-tablet": "1.5rem", "space-xl": "2rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "grid-margin-mobile": "1rem", "space-sm": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "grid-margin-desktop": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "body-lg": [ "Chivo" ], "body-sm": [ "Chivo" ], "body-md": [ "Chivo" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-data-md": [ "JetBrains Mono" ], "label-data-lg": [ "JetBrains Mono" ], "label-data-sm": [ "JetBrains Mono" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-data-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" } ], "label-data-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "label-data-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest/90 backdrop-blur-xl z-40 hidden xl:flex flex-col justify-between py-space-md px-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex flex-col gap-space-sm"><div class="px-space-xs py-space-2xs"><span class="font-label-data-sm text-label-data-sm uppercase tracking-widest text-outline">Tactical Squad</span><div class="mt-space-2xs flex items-center justify-between"><span class="font-headline-sm text-headline-sm text-primary">FIRETEAM #09</span><span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim bg-surface-container px-space-2xs py-space-2xs rounded">4/4 READY</span></div></div><div class="flex flex-col gap-space-2xs"><div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-low/70"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><div class="flex flex-col flex-1 min-w-0"><span class="font-label-data-md text-label-data-md text-on-surface truncate">VIPER_ALPHA</span><span class="font-label-data-sm text-label-data-sm text-outline truncate">COMMANDER • ASSAULT</span></div><span class="font-label-data-sm text-label-data-sm text-primary">98ms</span></div><div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-low/40"><div class="w-2 h-2 rounded-full bg-primary-container"></div><div class="flex flex-col flex-1 min-w-0"><span class="font-label-data-md text-label-data-md text-on-surface truncate">NEXUS_GHOST</span><span class="font-label-data-sm text-label-data-sm text-outline truncate">RECON • SNIPER</span></div><span class="font-label-data-sm text-label-data-sm text-outline">42ms</span></div><div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-low/40"><div class="w-2 h-2 rounded-full bg-secondary"></div><div class="flex flex-col flex-1 min-w-0"><span class="font-label-data-md text-label-data-md text-on-surface truncate">VALKYRIE_01</span><span class="font-label-data-sm text-label-data-sm text-outline truncate">SUPPORT • SENTINEL</span></div><span class="font-label-data-sm text-label-data-sm text-outline">56ms</span></div><div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-container-low/40"><div class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></div><div class="flex flex-col flex-1 min-w-0"><span class="font-label-data-md text-label-data-md text-on-surface truncate">CHRONO_KID</span><span class="font-label-data-sm text-label-data-sm text-outline truncate">CONTROLLER • TECH</span></div><span class="font-label-data-sm text-label-data-sm text-outline">61ms</span></div></div></div><div class="p-space-xs rounded bg-surface-container-low flex flex-col gap-space-2xs"><div class="flex items-center justify-between text-outline"><span class="font-label-data-sm text-label-data-sm uppercase">Battle Pass S8</span><span class="font-label-data-sm text-label-data-sm text-secondary">TIER 78/100</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary-container w-3/4"></div></div><span class="font-label-data-sm text-label-data-sm text-on-surface-variant">+450 XP TO CYBER REAPER BLADE</span></div></aside><div class="xl:pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="TECHRONICS Cyber Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKDb-uoWH5QsSLq1P1v_AOwhwec0BgYwnWoL2LeJDP4L8hkQaKZClTQ6Iuw0afabv7uYGcfjRlGSkwdl2BI6giy9PWpMLs3KNSvSzHaurGP3mfpMjOkDmwne2h6rnYgF095hAQSEucEAWrwC9Jj3HfCeaALktOykxDp0QlxhAjPUxyUCfdcfyfriQ6jgiCgzgQybd7gi_cX5AWu_BKqQflrA_9GgMChriZaMF5eIsp2P0c6lfn-6C5fTFG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase text-primary tracking-wider">TECHRONICS</span><span class="font-label-data-sm text-label-data-sm uppercase text-secondary bg-secondary-container/40 px-space-2xs rounded">ESPORTS BATTLE ARENA</span></div></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-bold rounded" data-path="lobby" href="#">Lobby</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="play-arena" href="#">Play Arena</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="leaderboard" href="#">Leaderboard</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="match-history" href="#">Match History</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="achievements" href="#">Achievements</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-label-data-sm text-label-data-sm text-primary">ONLINE - 14,820 PLAYERS</span></div><div class="flex items-center gap-space-2xs"><button aria-label="Toggle Sound Effects" class="p-space-2xs rounded text-primary-container hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">volume_up</span></button><button aria-label="Toggle Arena Music" class="p-space-2xs rounded text-secondary hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">headphones</span></button></div><div class="flex items-center gap-space-xs pl-space-xs bg-surface-container-high rounded p-space-2xs"><div class="relative flex items-center justify-center"><svg class="w-10 h-10 -rotate-90" viewbox="0 0 36 36"><path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path><path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="75, 100" stroke-width="3"></path></svg><img alt="Profile" class="w-8 h-8 rounded-full object-cover absolute" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXqdyHnS9BuGphkoQl7oUuxJNABrjK_Pa54SRVoJkBZ826RhOH7NZ4C2f_XfosMQHQ6EP3CPvRzKmdQVcgSsSWoIh9igN4BMQfihmx83lmDdOAIFqkmG9_X-IedcDxX_FsG5PXXuMmsnhIbkbHxEnaTTLBY4w5v6s2HZctqhrzhcBZpykxR6ZbvVh5fChGqlJIvreZhf0LB6wSYlUfj5AtA28tGweQ3ED33jmYzxKEY-cx0Y_kYDweQ"/></div><div class="hidden sm:flex flex-col"><div class="flex items-center gap-space-2xs"><span class="font-label-data-md text-label-data-md font-bold text-on-surface">CYBER_VIPER</span><span class="font-label-data-sm text-label-data-sm px-space-2xs bg-secondary-container text-on-secondary-container rounded">LVL 42</span></div><div class="flex items-center gap-space-xs"><span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim">DIAMOND III</span><span class="font-label-data-sm text-label-data-sm text-outline">2450 CR</span></div></div></div></div></div></header><main class="w-full pt-16 flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="relative w-full px-space-md lg:px-grid-margin-desktop py-space-xl flex flex-col gap-space-2xl overflow-hidden">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-32 w-96 h-96 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Section 1: Player Stats Overview HUD -->
+<section class="relative w-full">
+<div class="relative bg-surface-container-low/80 backdrop-blur-xl rounded-xl p-space-lg shadow-2xl flex flex-col xl:flex-row gap-space-lg items-stretch">
+<!-- Subtle HUD Reticle Marks -->
+<div class="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-primary-container/40 pointer-events-none"></div>
+<div class="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-primary-container/40 pointer-events-none"></div>
+<div class="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-primary-container/40 pointer-events-none"></div>
+<div class="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-primary-container/40 pointer-events-none"></div>
+<!-- Left: Profile identity card -->
+<div class="flex flex-col md:flex-row items-center md:items-start gap-space-md xl:w-5/12">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary-container to-secondary rounded-xl opacity-50 blur group-hover:opacity-80 transition duration-300"></div>
+<div class="relative w-28 h-28 md:w-32 md:h-32 rounded-lg overflow-hidden bg-surface-container-highest">
+<img alt="CYBER_VIPER Profile Picture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXqdyHnS9BuGphkoQl7oUuxJNABrjK_Pa54SRVoJkBZ826RhOH7NZ4C2f_XfosMQHQ6EP3CPvRzKmdQVcgSsSWoIh9igN4BMQfihmx83lmDdOAIFqkmG9_X-IedcDxX_FsG5PXXuMmsnhIbkbHxEnaTTLBY4w5v6s2HZctqhrzhcBZpykxR6ZbvVh5fChGqlJIvreZhf0LB6wSYlUfj5AtA28tGweQ3ED33jmYzxKEY-cx0Y_kYDweQ"/>
+</div>
+<span class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container font-label-data-sm text-label-data-sm px-space-xs py-space-2xs rounded shadow-md uppercase tracking-wider">
+              LVL 42
+            </span>
+</div>
+<div class="flex flex-col gap-space-xs flex-1 w-full text-center md:text-left">
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide">CYBER_VIPER</h2>
+<span class="font-label-data-sm text-label-data-sm text-outline px-space-2xs py-space-2xs bg-surface-container rounded">#TK-9082</span>
+<span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim bg-on-primary-fixed-variant/30 px-space-xs py-space-2xs rounded uppercase font-semibold">
+                ELITE CYBER-ATHLETE
+              </span>
+</div>
+<!-- XP Progress HUD -->
+<div class="mt-space-2xs flex flex-col gap-space-2xs">
+<div class="flex justify-between items-center text-outline">
+<span class="font-label-data-sm text-label-data-sm uppercase tracking-wider">EXP MATRIX</span>
+<span class="font-label-data-sm text-label-data-sm text-on-surface">8,450 / 10,000 XP</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden p-0.5 relative">
+<div class="h-full bg-gradient-to-r from-primary-container via-surface-tint to-secondary rounded-full w-[84.5%] shadow-[0_0_12px_rgba(0,242,254,0.6)]"></div>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim tracking-tight">1,550 XP TO LEVEL 43 • SEASON 08 PASS UNLOCKED</span>
+</div>
+</div>
+</div>
+<!-- Right: Telemetry Quick Badges -->
+<div class="flex-1 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-space-xs xl:border-l xl:border-outline-variant/30 xl:pl-space-lg items-center">
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">VICTORIES</span>
+<span class="font-headline-sm text-headline-sm text-primary">342</span>
+<span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim">+12 Today</span>
+</div>
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">DEFEATS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">118</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Past 48h: 2</span>
+</div>
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">DRAWS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">45</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Stalemate</span>
+</div>
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">WIN RATE</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim">74.3%</span>
+<span class="font-label-data-sm text-label-data-sm text-primary">+2.1% High</span>
+</div>
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-2 -bottom-2 text-error/10 pointer-events-none">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase flex items-center gap-1">
+              STREAK
+              <span class="material-symbols-outlined text-sm text-error" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</span>
+<span class="font-headline-sm text-headline-sm text-error flex items-center gap-1">
+              7 <span class="text-xs uppercase font-label-data-sm text-on-error-container">WINS</span>
+</span>
+<span class="font-label-data-sm text-label-data-sm text-error">ON FIRE</span>
+</div>
+<div class="bg-surface-container/60 p-space-xs rounded flex flex-col justify-between">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">RANK RATING</span>
+<span class="font-headline-sm text-headline-sm text-secondary">2,450 CR</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary-fixed">TOP 1.2% MASTER</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Central Hero Action Heading Area -->
+<section class="flex flex-col items-center justify-center text-center gap-space-2xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-high/60 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-data-sm text-label-data-sm uppercase tracking-widest text-primary">GLOBAL MATCHMAKING SERVER CLUSTER // ONLINE</span>
+</div>
+<h1 class="font-display-hero text-display-hero uppercase tracking-tight text-primary">
+        READY TO PLAY?
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+        Choose your combat protocol and dominate the grid. Engage world-class pilots or practice with next-gen neural bots.
+      </p>
+</section>
+<!-- Section 3: Two Large Futuristic Game-Mode Cards -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Card 1: ONLINE MULTIPLAYER (Glowing Neon Cyan Theme) -->
+<div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,242,254,0.2)] hover:bg-surface-container-low">
+<!-- Corner Reticle Accents -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-primary-container"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-primary-container"></div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-primary-container"></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-primary-container"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="p-space-sm bg-primary-container/10 rounded-lg text-primary-container shadow-[0_0_15px_rgba(0,242,254,0.3)]">
+<span class="material-symbols-outlined text-4xl">public</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-xs py-space-2xs rounded">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-data-sm text-label-data-sm text-primary">14,820 ACTIVE BATTLERS</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-primary uppercase">ONLINE MULTIPLAYER</h3>
+<span class="font-label-data-sm text-label-data-sm px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-bold">RANKED</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Compete ranked or casual with players worldwide. Automated matchmaking, low-latency sync &amp; kernel anti-cheat enabled.
+            </p>
+</div>
+<!-- Feature Badges -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="font-label-data-sm text-label-data-sm bg-surface-container-high px-space-xs py-space-2xs rounded text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary-container">verified</span> ELO FAIR MATCH
+            </span>
+<span class="font-label-data-sm text-label-data-sm bg-surface-container-high px-space-xs py-space-2xs rounded text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary-container">bolt</span> 128-TICK SERVERS
+            </span>
+<span class="font-label-data-sm text-label-data-sm bg-surface-container-high px-space-xs py-space-2xs rounded text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary-container">security</span> TECHRONICS SENTINEL
+            </span>
+</div>
+</div>
+<div class="mt-space-xl flex flex-col gap-space-sm">
+<button class="w-full py-space-sm px-space-md rounded font-headline-sm text-headline-sm uppercase tracking-wider bg-gradient-to-r from-primary-container via-surface-tint to-primary-fixed-dim text-on-primary font-bold shadow-[0_0_20px_rgba(0,242,254,0.45)] hover:shadow-[0_0_30px_rgba(0,242,254,0.7)] hover:brightness-110 active:scale-[0.99] transition flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined">play_arrow</span> PLAY ONLINE NOW
+          </button>
+<!-- Secondary Tactical Subactions -->
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-space-xs px-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-data-sm text-label-data-sm text-center transition flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm text-primary-container">flash_on</span> QUICK MATCH
+            </button>
+<button class="py-space-xs px-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-data-sm text-label-data-sm text-center transition flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm text-primary-container">meeting_room</span> PRIVATE ROOM
+            </button>
+<button class="py-space-xs px-space-2xs rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-data-sm text-label-data-sm text-center transition flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm text-primary-container">person_add</span> INVITE FRIENDS
+            </button>
+</div>
+</div>
+</div>
+<!-- Card 2: OFFLINE ARENA (Electric Neon Purple/Magenta Theme) -->
+<div class="group relative rounded-xl bg-surface-container-low/70 backdrop-blur-xl p-space-lg flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_30px_rgba(221,183,255,0.2)] hover:bg-surface-container-low">
+<!-- Corner Reticle Accents -->
+<div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-secondary"></div>
+<div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-secondary"></div>
+<div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-secondary"></div>
+<div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-secondary"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="p-space-sm bg-secondary-container/30 rounded-lg text-secondary shadow-[0_0_15px_rgba(221,183,255,0.3)]">
+<span class="material-symbols-outlined text-4xl">sports_esports</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-xs py-space-2xs rounded">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-data-sm text-label-data-sm text-secondary">ZERO LATENCY SIMULATION</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-lg text-headline-lg text-secondary uppercase">OFFLINE ARENA</h3>
+<span class="font-label-data-sm text-label-data-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">LOCAL &amp; AI</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Sharpen your tactical prowess locally. Challenge self-learning Neural AI or engage a rival pilot on a shared hardware hotseat.
+            </p>
+</div>
+<!-- Select AI Protocols -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase tracking-wider">AI SUBROUTINE LEVEL</span>
+<div class="grid grid-cols-4 gap-space-2xs" id="ai-difficulty-selector">
+<button class="ai-btn py-space-2xs rounded bg-surface-container-high text-outline hover:text-on-surface font-label-data-sm text-label-data-sm uppercase transition" data-diff="easy" type="button">Easy</button>
+<button class="ai-btn py-space-2xs rounded bg-surface-container-high text-outline hover:text-on-surface font-label-data-sm text-label-data-sm uppercase transition" data-diff="med" type="button">Medium</button>
+<button class="ai-btn py-space-2xs rounded bg-secondary text-on-secondary font-bold font-label-data-sm text-label-data-sm uppercase shadow-[0_0_10px_rgba(221,183,255,0.5)] transition" data-diff="hard" type="button">Hard</button>
+<button class="ai-btn py-space-2xs rounded bg-surface-container-high text-outline hover:text-on-surface font-label-data-sm text-label-data-sm uppercase transition" data-diff="expert" type="button">Expert</button>
+</div>
+</div>
+</div>
+<div class="mt-space-xl flex flex-col gap-space-sm">
+<button class="w-full py-space-sm px-space-md rounded font-headline-sm text-headline-sm uppercase tracking-wider bg-gradient-to-r from-secondary-container via-secondary to-secondary-fixed text-on-secondary-fixed font-bold shadow-[0_0_20px_rgba(111,0,190,0.5)] hover:shadow-[0_0_30px_rgba(221,183,255,0.7)] hover:brightness-110 active:scale-[0.99] transition flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined">smart_toy</span> PLAY VS NEURAL AI
+          </button>
+<!-- Secondary Local Hotseat Trigger -->
+<button class="w-full py-space-xs px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-data-md text-label-data-md uppercase tracking-wider transition flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-lg">group</span> LAUNCH LOCAL 2-PLAYER HOTSEAT
+          </button>
+</div>
+</div>
+</section>
+<!-- Section 4: Bottom Fast-Access Modules (Telemetry & Quick Ops) -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Module 1: Recent Match Telemetry Snippet -->
+<div class="relative bg-surface-container-low/70 backdrop-blur-md rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container">history</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">LAST ENCOUNTER</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-primary px-space-xs py-space-2xs bg-primary-container/10 rounded">VICTORY</span>
+</div>
+<div class="my-space-xs bg-surface-container p-space-xs rounded flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-base">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-data-md text-label-data-md text-on-surface">VS NEO_GHOST</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Ranked Duel • Cyber Vault</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">3 - 1</span>
+<span class="font-label-data-sm text-label-data-sm text-primary-container font-bold">+18 CR</span>
+</div>
+</div>
+<a class="pt-space-2xs text-primary-fixed-dim hover:text-primary font-label-data-sm text-label-data-sm uppercase tracking-wider flex items-center gap-1" data-path="match-history" href="#">
+          VIEW FULL COMBAT LOG <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- Module 2: Active Quests & Bounties -->
+<div class="relative bg-surface-container-low/70 backdrop-blur-md rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">task_alt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">TACTICAL BOUNTIES</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-secondary px-space-xs py-space-2xs bg-secondary-container/20 rounded">RESET: 04H 21M</span>
+</div>
+<div class="flex flex-col gap-space-2xs my-space-xs">
+<!-- Quest 1 -->
+<div class="flex flex-col gap-1 p-space-2xs bg-surface-container rounded">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-data-md text-label-data-md text-on-surface">Win 3 Ranked Matches</span>
+<span class="font-label-data-sm text-label-data-sm text-primary">2 / 3</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-2/3"></div>
+</div>
+</div>
+<!-- Quest 2 -->
+<div class="flex flex-col gap-1 p-space-2xs bg-surface-container rounded">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-data-md text-label-data-md text-on-surface">Achieve a 3-Win Streak</span>
+<span class="font-label-data-sm text-label-data-sm text-secondary font-bold">COMPLETED</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+<a class="pt-space-2xs text-secondary-fixed hover:text-secondary font-label-data-sm text-label-data-sm uppercase tracking-wider flex items-center gap-1" data-path="achievements" href="#">
+          CLAIM REWARDS (1 READY) <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- Module 3: Tactical Station Quick Links -->
+<div class="relative bg-surface-container-low/70 backdrop-blur-md rounded-xl p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline">hub</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">FAST TERMINALS</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline">SYSTEM v4.8</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs my-space-xs">
+<a class="p-space-xs rounded bg-surface-container hover:bg-surface-container-high transition flex items-center gap-space-xs" data-path="leaderboard" href="#">
+<span class="material-symbols-outlined text-primary-container text-xl">leaderboard</span>
+<div class="flex flex-col">
+<span class="font-label-data-md text-label-data-md text-on-surface">RANKS</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Top 100</span>
+</div>
+</a>
+<a class="p-space-xs rounded bg-surface-container hover:bg-surface-container-high transition flex items-center gap-space-xs" data-path="achievements" href="#">
+<span class="material-symbols-outlined text-secondary text-xl">military_tech</span>
+<div class="flex flex-col">
+<span class="font-label-data-md text-label-data-md text-on-surface">BADGES</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">48 / 60</span>
+</div>
+</a>
+<a class="p-space-xs rounded bg-surface-container hover:bg-surface-container-high transition flex items-center gap-space-xs" data-path="match-history" href="#">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-xl">insights</span>
+<div class="flex flex-col">
+<span class="font-label-data-md text-label-data-md text-on-surface">ANALYTICS</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">Heatmaps</span>
+</div>
+</a>
+<a class="p-space-xs rounded bg-surface-container hover:bg-surface-container-high transition flex items-center gap-space-xs" data-path="settings" href="#">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">tune</span>
+<div class="flex flex-col">
+<span class="font-label-data-md text-label-data-md text-on-surface">CALIBRATE</span>
+<span class="font-label-data-sm text-label-data-sm text-outline">HUD / Audio</span>
+</div>
+</a>
+</div>
+<div class="pt-space-2xs flex items-center justify-between text-outline">
+<span class="font-label-data-sm text-label-data-sm">REGION: AP-SOUTHEAST-1</span>
+<span class="font-label-data-sm text-label-data-sm text-primary">RTT: 14ms</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Micro-Interactions Client Script -->
+<script>
+    (function() {
+      const diffButtons = document.querySelectorAll('#ai-difficulty-selector .ai-btn');
+      diffButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          diffButtons.forEach(b => {
+            b.className = 'ai-btn py-space-2xs rounded bg-surface-container-high text-outline hover:text-on-surface font-label-data-sm text-label-data-sm uppercase transition';
+          });
+          btn.className = 'ai-btn py-space-2xs rounded bg-secondary text-on-secondary font-bold font-label-data-sm text-label-data-sm uppercase shadow-[0_0_10px_rgba(221,183,255,0.5)] transition';
+        });
+      });
+    })();
+  </script>
+</div></main></div></body></html>

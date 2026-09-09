@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#ffdad6", "surface-bright": "#38393f", "surface-dim": "#121318", "on-secondary-fixed": "#2c0051", "on-secondary-fixed-variant": "#6900b3", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#653e00", "primary-container": "#00f2fe", "on-surface-variant": "#b9cacb", "inverse-surface": "#e3e1e9", "on-secondary-container": "#d6a9ff", "outline-variant": "#3a494b", "tertiary": "#fff5ee", "on-primary": "#00373a", "on-tertiary": "#472a00", "surface-tint": "#00dce6", "secondary-fixed": "#f0dbff", "on-surface": "#e3e1e9", "primary": "#e0fdff", "secondary": "#ddb7ff", "secondary-fixed-dim": "#ddb7ff", "inverse-on-surface": "#2f3036", "background": "#121318", "surface-container-low": "#1a1b21", "secondary-container": "#6f00be", "inverse-primary": "#00696f", "surface-container-high": "#292a2f", "on-tertiary-fixed": "#2a1700", "surface-variant": "#34343a", "surface-container": "#1e1f25", "on-primary-fixed-variant": "#004f53", "error-container": "#93000a", "on-primary-container": "#006a70", "tertiary-container": "#ffd3a1", "on-primary-fixed": "#002022", "on-tertiary-container": "#875400", "primary-fixed-dim": "#00dce6", "surface-container-lowest": "#0d0e13", "on-error": "#690005", "tertiary-fixed": "#ffddb8", "outline": "#849495", "surface": "#121318", "tertiary-fixed-dim": "#ffb95f", "on-secondary": "#490080", "on-background": "#e3e1e9", "primary-fixed": "#6ff6ff", "surface-container-highest": "#34343a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "gutter-tablet": "1rem", "grid-margin-tablet": "1.5rem", "space-xl": "2rem", "space-xs": "0.5rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "grid-margin-mobile": "1rem", "space-sm": "0.75rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "grid-margin-desktop": "3rem", "space-md": "1rem" }, "fontFamily": { "headline-lg": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "display-hero-mobile": [ "Space Grotesk" ], "display-hero": [ "Space Grotesk" ], "body-lg": [ "Chivo" ], "body-sm": [ "Chivo" ], "body-md": [ "Chivo" ], "headline-lg-mobile": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "label-data-md": [ "JetBrains Mono" ], "label-data-lg": [ "JetBrains Mono" ], "label-data-sm": [ "JetBrains Mono" ] }, "fontSize": { "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "600" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-data-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" } ], "label-data-lg": [ "15px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "label-data-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-space-md flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="TECHRONICS Cyber Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKDb-uoWH5QsSLq1P1v_AOwhwec0BgYwnWoL2LeJDP4L8hkQaKZClTQ6Iuw0afabv7uYGcfjRlGSkwdl2BI6giy9PWpMLs3KNSvSzHaurGP3mfpMjOkDmwne2h6rnYgF095hAQSEucEAWrwC9Jj3HfCeaALktOykxDp0QlxhAjPUxyUCfdcfyfriQ6jgiCgzgQybd7gi_cX5AWu_BKqQflrA_9GgMChriZaMF5eIsp2P0c6lfn-6C5fTFG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase text-primary tracking-wider">TECHRONICS</span><span class="font-label-data-sm text-label-data-sm uppercase text-secondary bg-secondary-container/40 px-space-2xs rounded">ESPORTS BATTLE ARENA</span></div></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded"><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="lobby" href="#">Lobby</a><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-primary-container text-on-primary-container font-bold rounded" data-path="play-arena" href="#">Play Arena</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="leaderboard" href="#">Leaderboard</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="match-history" href="#">Match History</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="achievements" href="#">Achievements</a><a class="px-space-sm py-space-2xs font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-surface-container"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-label-data-sm text-label-data-sm text-primary">ONLINE - 14,820 PLAYERS</span></div><div class="flex items-center gap-space-2xs"><button aria-label="Toggle Sound Effects" class="p-space-2xs rounded text-primary-container hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">volume_up</span></button><button aria-label="Toggle Arena Music" class="p-space-2xs rounded text-secondary hover:bg-surface-container-high transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">headphones</span></button></div><div class="flex items-center gap-space-xs pl-space-xs bg-surface-container-high rounded p-space-2xs"><div class="relative flex items-center justify-center"><svg class="w-10 h-10 -rotate-90" viewbox="0 0 36 36"><path class="text-surface-container-highest" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path><path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="75, 100" stroke-width="3"></path></svg><img alt="Profile" class="w-8 h-8 rounded-full object-cover absolute" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXqdyHnS9BuGphkoQl7oUuxJNABrjK_Pa54SRVoJkBZ826RhOH7NZ4C2f_XfosMQHQ6EP3CPvRzKmdQVcgSsSWoIh9igN4BMQfihmx83lmDdOAIFqkmG9_X-IedcDxX_FsG5PXXuMmsnhIbkbHxEnaTTLBY4w5v6s2HZctqhrzhcBZpykxR6ZbvVh5fChGqlJIvreZhf0LB6wSYlUfj5AtA28tGweQ3ED33jmYzxKEY-cx0Y_kYDweQ"/></div><div class="hidden sm:flex flex-col"><div class="flex items-center gap-space-2xs"><span class="font-label-data-md text-label-data-md font-bold text-on-surface">CYBER_VIPER</span><span class="font-label-data-sm text-label-data-sm px-space-2xs bg-secondary-container text-on-secondary-container rounded">LVL 42</span></div><div class="flex items-center gap-space-xs"><span class="font-label-data-sm text-label-data-sm text-primary-fixed-dim">DIAMOND III</span><span class="font-label-data-sm text-label-data-sm text-outline">2450 CR</span></div></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full relative overflow-hidden bg-background text-on-surface select-none pb-space-2xl">
+<!-- Dynamic Ambient Cyber Matrix Lighting -->
+<div class="absolute -top-40 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-20 left-10 w-80 h-80 bg-error/10 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- Telemetry Sub-header Rail -->
+<div class="w-full bg-surface-container-lowest/80 backdrop-blur-md px-space-md py-space-xs shadow-md">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-xs font-label-data-sm text-label-data-sm uppercase tracking-widest text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-2xs text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00f2fe] animate-pulse"></span>
+<span>MATCH STATUS: ROUND 03</span>
+</div>
+<span class="text-outline-variant">/</span>
+<div class="flex items-center gap-space-2xs text-on-surface">
+<span class="material-symbols-outlined text-sm text-outline">timer</span>
+<span>MATCH TIME: <strong class="text-primary font-label-data-md" id="match-timer">00:27</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-2xs text-primary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed-dim shadow-[0_0_6px_#00dce6]"></span>
+<span>PING: 18ms (OPTIMAL)</span>
+</div>
+<span class="text-outline-variant">/</span>
+<div class="flex items-center gap-space-2xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-outline">dns</span>
+<span>SERVER: US-EAST CYBER-01</span>
+</div>
+<span class="text-outline-variant">/</span>
+<div class="flex items-center gap-space-2xs text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-sm">security</span>
+<span>SPECTATORS: 1,492</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Duel Stage Header -->
+<div class="w-full max-w-7xl mx-auto px-space-md pt-space-md pb-space-sm">
+<div class="relative bg-surface-container-low/70 backdrop-blur-xl rounded-xl shadow-xl p-space-md overflow-hidden">
+<!-- Circuit accent lines -->
+<div class="absolute top-0 left-0 w-32 h-[2px] bg-gradient-to-r from-primary-container to-transparent"></div>
+<div class="absolute top-0 right-0 w-32 h-[2px] bg-gradient-to-l from-secondary to-transparent"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Player 1 (CYBER_VIPER - YOU) -->
+<div class="md:col-span-4 flex items-center justify-start gap-space-sm">
+<div class="relative group">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-[0_0_24px_rgba(0,242,254,0.35)] relative bg-surface-container-high">
+<img alt="CYBER_VIPER profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSXqdyHnS9BuGphkoQl7oUuxJNABrjK_Pa54SRVoJkBZ826RhOH7NZ4C2f_XfosMQHQ6EP3CPvRzKmdQVcgSsSWoIh9igN4BMQfihmx83lmDdOAIFqkmG9_X-IedcDxX_FsG5PXXuMmsnhIbkbHxEnaTTLBY4w5v6s2HZctqhrzhcBZpykxR6ZbvVh5fChGqlJIvreZhf0LB6wSYlUfj5AtA28tGweQ3ED33jmYzxKEY-cx0Y_kYDweQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1 right-1 px-space-2xs bg-primary-container text-on-primary-container font-label-data-sm text-[9px] rounded font-bold">YOU</div>
+</div>
+<div class="absolute -top-1 -left-1 w-3 h-3 bg-primary-container rounded-sm shadow-[0_0_8px_#00f2fe]"></div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide truncate">CYBER_VIPER</span>
+<span class="px-space-2xs py-0.5 bg-primary-container/20 text-primary-container rounded text-label-data-sm font-label-data-sm shadow-[0_0_10px_rgba(0,242,254,0.3)]">DIAMOND III</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5 font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span>RATING: <strong class="text-primary-fixed">2,450 CR</strong></span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary-container font-bold flex items-center gap-1">
+                SYMBOL: <span class="font-headline-sm text-lg text-primary-container drop-shadow-[0_0_8px_#00f2fe]">✕</span>
+</span>
+</div>
+<!-- Score Counter -->
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="text-label-data-sm text-outline">SERIES PTS:</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-primary font-label-data-lg text-label-data-lg font-bold rounded shadow-inner">01</span>
+<span class="text-label-data-sm text-primary-container">MATCH POINT</span>
+</div>
+</div>
+</div>
+<!-- Center VS / Round Nexus -->
+<div class="md:col-span-4 flex flex-col items-center justify-center text-center">
+<div class="relative flex items-center justify-center">
+<!-- Lightning / Neon Nexus Aura -->
+<div class="absolute w-24 h-24 bg-gradient-to-tr from-primary-container/30 to-secondary/30 rounded-full blur-xl animate-pulse"></div>
+<div class="relative w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center shadow-[0_0_30px_rgba(0,242,254,0.25)]">
+<span class="font-display-hero-mobile text-headline-lg font-extrabold bg-gradient-to-r from-primary-container via-tertiary to-secondary bg-clip-text text-transparent italic tracking-tighter drop-shadow-[0_0_14px_rgba(221,183,255,0.8)]">
+                VS
+              </span>
+</div>
+</div>
+<div class="mt-space-2xs flex items-center gap-space-xs">
+<span class="h-0.5 w-6 bg-gradient-to-r from-transparent to-primary-container"></span>
+<span class="font-label-data-sm text-label-data-sm text-tertiary-fixed tracking-widest font-bold">RANKED DUEL ARENA</span>
+<span class="h-0.5 w-6 bg-gradient-to-l from-transparent to-secondary"></span>
+</div>
+</div>
+<!-- Player 2 (VORTEX_99 - OPPONENT) -->
+<div class="md:col-span-4 flex items-center justify-end gap-space-sm text-right">
+<div class="flex flex-col min-w-0 items-end">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-2xs py-0.5 bg-secondary-container/40 text-secondary rounded text-label-data-sm font-label-data-sm shadow-[0_0_10px_rgba(221,183,255,0.2)]">TITAN II</span>
+<span class="font-headline-sm text-headline-sm text-secondary tracking-wide truncate">VORTEX_99</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5 font-label-data-sm text-label-data-sm text-on-surface-variant">
+<span class="text-secondary font-bold flex items-center gap-1">
+                SYMBOL: <span class="font-headline-sm text-lg text-secondary drop-shadow-[0_0_8px_#ddb7ff]">○</span>
+</span>
+<span class="text-outline-variant">•</span>
+<span>RATING: <strong class="text-secondary-fixed">2,410 CR</strong></span>
+</div>
+<!-- Score Counter -->
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="text-label-data-sm text-secondary">MATCH POINT</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-secondary font-label-data-lg text-label-data-lg font-bold rounded shadow-inner">01</span>
+<span class="text-label-data-sm text-outline">:SERIES PTS</span>
+</div>
+</div>
+<div class="relative group">
+<div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shadow-[0_0_24px_rgba(221,183,255,0.35)] relative bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Cybernetic opponent esports avatar wearing heavily armored stealth combat helmet with glowing purple HUD visor and illuminated respirator cables, hyper-detailed futuristic digital warrior portrait, dark void atmosphere with saturated ultraviolet ambient glows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjpcbljMZPeD6b_13RKUif_lG9d_MSdGLUF3jtTRUtQEkVgreKkzegW1jNITRM_TZBZYX4YoFqoPqGZax51uh4ThFt1RyogtM7TjOtVbB28ToeBqSELG7uVKPNgeZspuFINjaS5q_SNCjG8VSnaaVbTRULtIcWNI1lfDPsLdQ5CWkI5WJ5I3ANS_17OaNyUnW2Zm-AiIMKQm46MIqfQC3RovrQ5t1d05cWyRvdfpXg9WDxcVclPTvcg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1 left-1 px-space-2xs bg-secondary text-on-secondary font-label-data-sm text-[9px] rounded font-bold">RIVAL</div>
+</div>
+<div class="absolute -top-1 -right-1 w-3 h-3 bg-secondary rounded-sm shadow-[0_0_8px_#ddb7ff]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Turn Indicator Active Cyber Banner -->
+<div class="w-full max-w-7xl mx-auto px-space-md my-space-xs">
+<div class="relative w-full rounded-lg bg-gradient-to-r from-surface-container-lowest via-surface-container to-surface-container-lowest p-space-sm overflow-hidden shadow-[0_0_25px_rgba(0,242,254,0.18)]">
+<!-- Neon top & bottom laser highlights -->
+<div class="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-primary-container to-transparent"></div>
+<div class="absolute bottom-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-primary-container/40 to-transparent"></div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm px-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 flex items-center justify-center">
+<!-- Animated circular progress ring -->
+<svg class="w-10 h-10 -rotate-90" viewbox="0 0 40 40">
+<circle class="text-surface-variant" cx="20" cy="20" fill="none" r="16" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary-container shadow-[0_0_10px_#00f2fe]" cx="20" cy="20" fill="none" id="turn-ring" r="16" stroke="currentColor" stroke-dasharray="100" stroke-dashoffset="35" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="absolute font-label-data-md text-label-data-md font-bold text-primary" id="turn-countdown">12s</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-headline-sm text-headline-sm uppercase text-primary tracking-wide">
+                PLAYER X TURN (YOUR MOVE)
+              </span>
+</div>
+<p class="font-label-data-sm text-label-data-sm text-on-surface-variant">LOCK IN SECTOR COORDINATE BEFORE DISCONNECTION TIMEOUT</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden lg:flex flex-col text-right">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase">STRATAGEM RECOMMENDATION</span>
+<span class="font-label-data-md text-label-data-md text-tertiary-fixed font-bold">SECTOR [A3] DEFENSIVE INTERCEPT</span>
+</div>
+<div class="px-space-sm py-space-2xs bg-primary-container/10 rounded flex items-center gap-space-xs text-primary-container font-label-data-sm text-label-data-sm">
+<span class="material-symbols-outlined text-base animate-pulse">radar</span>
+<span>TELEMETRY LIVE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Battlefield Core Grid & Tactical Sidebar -->
+<div class="w-full max-w-7xl mx-auto px-space-md py-space-sm grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Left Auxiliary / Grid Zone (8 cols) -->
+<div class="lg:col-span-8 flex flex-col items-center justify-center relative">
+<!-- Decorative Reticle HUD corners -->
+<div class="w-full relative bg-surface-container-lowest/60 rounded-xl p-space-md sm:p-space-lg shadow-2xl flex flex-col items-center">
+<!-- Top HUD bar -->
+<div class="w-full flex items-center justify-between mb-space-md font-label-data-sm text-label-data-sm text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="text-primary font-bold">MATRIX 3x3</span>
+<span>//</span>
+<span>HEURISTIC GRID OVERLAY</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-sm">grid_guides</span>
+<span>QUANTUM-SYNC ACTIVE</span>
+</div>
+</div>
+<!-- 3x3 Glowing Battlefield Grid -->
+<div class="relative p-space-sm bg-surface-container-high/40 backdrop-blur-2xl rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.8)] max-w-[540px] w-full aspect-square flex items-center justify-center">
+<!-- Cyber Circuit Conduits (Grid Dividers) -->
+<div class="absolute inset-0 grid grid-cols-3 grid-rows-3 pointer-events-none p-space-sm">
+<!-- Vertical Conduit Lines -->
+<div class="absolute top-space-sm bottom-space-sm left-1/3 w-[2px] bg-gradient-to-b from-primary-container/20 via-primary-container to-primary-container/20 shadow-[0_0_12px_#00f2fe]"></div>
+<div class="absolute top-space-sm bottom-space-sm left-2/3 w-[2px] bg-gradient-to-b from-secondary/20 via-secondary to-secondary/20 shadow-[0_0_12px_#ddb7ff]"></div>
+<!-- Horizontal Conduit Lines -->
+<div class="absolute left-space-sm right-space-sm top-1/3 h-[2px] bg-gradient-to-r from-primary-container/20 via-primary-container to-primary-container/20 shadow-[0_0_12px_#00f2fe]"></div>
+<div class="absolute left-space-sm right-space-sm top-2/3 h-[2px] bg-gradient-to-r from-secondary/20 via-secondary to-secondary/20 shadow-[0_0_12px_#ddb7ff]"></div>
+</div>
+<!-- The Cells Grid -->
+<div class="w-full h-full grid grid-cols-3 grid-rows-3 gap-space-xs relative z-10">
+<!-- Cell A1 (Occupied by Player 1: X) -->
+<div class="relative group flex items-center justify-center bg-surface-container/60 hover:bg-surface-container-high/70 backdrop-blur-xl rounded-lg transition-all duration-300 overflow-hidden cursor-default shadow-sm">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-primary-container/70">[A1]</span>
+<!-- Glowing Neon Cyan 'X' -->
+<div class="relative flex items-center justify-center animate-pulse">
+<span class="font-display-hero text-display-hero sm:text-7xl font-extrabold text-primary-container drop-shadow-[0_0_24px_#00f2fe]">✕</span>
+<div class="absolute w-16 h-16 bg-primary-container/20 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<span class="absolute bottom-1.5 right-2 font-label-data-sm text-[9px] text-primary">VIPER (00:04)</span>
+</div>
+<!-- Cell A2 (Empty) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/70 hover:bg-primary-container/10 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-outline group-hover:text-primary transition-colors">[A2]</span>
+<!-- Empty Reticle / Crosshair hover state -->
+<div class="opacity-20 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-primary/40 group-hover:text-primary-container group-hover:drop-shadow-[0_0_15px_#00f2fe]">✕</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [A2]</span>
+</button>
+<!-- Cell A3 (Empty - Recommended Move) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/80 hover:bg-primary-container/15 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-tertiary-fixed font-bold">[A3]</span>
+<span class="absolute top-2 right-2 px-1 bg-tertiary-container text-on-tertiary-container font-label-data-sm text-[8px] rounded uppercase font-bold">RECOMMENDED</span>
+<div class="opacity-30 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-tertiary-fixed-dim/50 group-hover:text-primary-container group-hover:drop-shadow-[0_0_16px_#00f2fe]">✕</span>
+</div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [A3]</span>
+</button>
+<!-- Cell B1 (Empty) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/70 hover:bg-primary-container/10 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-outline group-hover:text-primary transition-colors">[B1]</span>
+<div class="opacity-20 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-primary/40 group-hover:text-primary-container group-hover:drop-shadow-[0_0_15px_#00f2fe]">✕</span>
+</div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [B1]</span>
+</button>
+<!-- Cell B2 (Occupied by Player 2: O) -->
+<div class="relative group flex items-center justify-center bg-surface-container/60 hover:bg-surface-container-high/70 backdrop-blur-xl rounded-lg transition-all duration-300 overflow-hidden cursor-default shadow-sm">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-secondary/70">[B2]</span>
+<!-- Glowing Neon Magenta 'O' with electric pulse -->
+<div class="relative flex items-center justify-center">
+<span class="font-display-hero text-display-hero sm:text-7xl font-extrabold text-secondary drop-shadow-[0_0_24px_#ddb7ff]">○</span>
+<div class="absolute w-16 h-16 bg-secondary/25 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<span class="absolute bottom-1.5 right-2 font-label-data-sm text-[9px] text-secondary">VORTEX (00:14)</span>
+</div>
+<!-- Cell B3 (Empty) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/70 hover:bg-primary-container/10 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-outline group-hover:text-primary transition-colors">[B3]</span>
+<div class="opacity-20 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-primary/40 group-hover:text-primary-container group-hover:drop-shadow-[0_0_15px_#00f2fe]">✕</span>
+</div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [B3]</span>
+</button>
+<!-- Cell C1 (Empty) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/70 hover:bg-primary-container/10 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-outline group-hover:text-primary transition-colors">[C1]</span>
+<div class="opacity-20 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-primary/40 group-hover:text-primary-container group-hover:drop-shadow-[0_0_15px_#00f2fe]">✕</span>
+</div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [C1]</span>
+</button>
+<!-- Cell C2 (Empty) -->
+<button class="group relative flex items-center justify-center bg-surface-container-lowest/70 hover:bg-primary-container/10 backdrop-blur-xl rounded-lg transition-all duration-200 cursor-pointer overflow-hidden active:scale-95 shadow-inner" type="button">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-outline group-hover:text-primary transition-colors">[C2]</span>
+<div class="opacity-20 group-hover:opacity-100 transition-all transform scale-75 group-hover:scale-100 flex items-center justify-center">
+<span class="font-display-hero text-display-hero font-light text-primary/40 group-hover:text-primary-container group-hover:drop-shadow-[0_0_15px_#00f2fe]">✕</span>
+</div>
+<span class="absolute bottom-2 text-label-data-sm font-label-data-sm text-primary-container opacity-0 group-hover:opacity-100 uppercase tracking-widest transition-opacity">ENGAGE [C2]</span>
+</button>
+<!-- Cell C3 (Occupied by Player 1: X) -->
+<div class="relative group flex items-center justify-center bg-surface-container/60 hover:bg-surface-container-high/70 backdrop-blur-xl rounded-lg transition-all duration-300 overflow-hidden cursor-default shadow-sm">
+<span class="absolute top-2 left-2 font-label-data-sm text-label-data-sm text-primary-container/70">[C3]</span>
+<!-- Glowing Neon Cyan 'X' -->
+<div class="relative flex items-center justify-center">
+<span class="font-display-hero text-display-hero sm:text-7xl font-extrabold text-primary-container drop-shadow-[0_0_24px_#00f2fe]">✕</span>
+<div class="absolute w-16 h-16 bg-primary-container/20 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<span class="absolute bottom-1.5 right-2 font-label-data-sm text-[9px] text-primary">VIPER (00:22)</span>
+</div>
+</div>
+</div>
+<!-- Grid Status Mini Indicator Footer -->
+<div class="w-full mt-space-md flex flex-wrap items-center justify-between gap-space-xs font-label-data-sm text-label-data-sm text-outline-variant">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>CELL FREQUENCY: 60Hz</span>
+</div>
+<div class="flex items-center gap-space-sm text-primary">
+<span>GRID OCCUPANCY: 3 / 9 CELLS (33.3%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Tactical Sidebar (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Live Tactical Win Probability Chart -->
+<div class="bg-surface-container-low/80 backdrop-blur-xl rounded-xl p-space-md shadow-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">query_stats</span>
+<span class="font-headline-sm text-headline-sm text-primary uppercase">WIN PROBABILITY</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm px-space-2xs bg-primary-container/10 text-primary-container rounded font-bold">AI HEURISTICS</span>
+</div>
+<div class="flex items-center justify-between mb-space-2xs font-label-data-md text-label-data-md">
+<span class="text-primary font-bold">VIPER 64%</span>
+<span class="text-secondary font-bold">36% VORTEX</span>
+</div>
+<!-- Progress bar Split -->
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden flex shadow-inner">
+<div class="h-full bg-primary-container shadow-[0_0_12px_#00f2fe]" style="width: 64%"></div>
+<div class="h-full bg-secondary shadow-[0_0_12px_#ddb7ff]" style="width: 36%"></div>
+</div>
+<!-- Inline SVG Sparkline Win Probability Trend -->
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-data-sm text-label-data-sm text-outline block mb-1">DELTA MOMENTUM FLUX:</span>
+<svg class="w-full h-14 text-primary-container" fill="none" viewbox="0 0 240 60">
+<path d="M0 45 L40 42 L80 32 L120 38 L160 22 L200 18 L240 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M0 45 L40 42 L80 32 L120 38 L160 22 L200 18 L240 14 L240 60 L0 60 Z" fill="url(#probability-gradient)" opacity="0.15"></path>
+<defs>
+<lineargradient id="probability-gradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00f2fe"></stop>
+<stop offset="100%" stop-color="#00f2fe" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<!-- Tactical Move History Log -->
+<div class="bg-surface-container-low/80 backdrop-blur-xl rounded-xl p-space-md shadow-xl flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">receipt_long</span>
+<span class="font-headline-sm text-headline-sm text-secondary uppercase">MOVE TELEMETRY</span>
+</div>
+<span class="font-label-data-sm text-label-data-sm text-outline">CURRENT TURN #04</span>
+</div>
+<div class="flex flex-col gap-space-xs font-label-data-sm text-label-data-sm">
+<!-- Move 1 -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="text-outline">#01</span>
+<span class="font-bold text-primary-container">✕ CYBER_VIPER</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-2xs bg-primary-container/20 text-primary-container rounded font-bold">A1</span>
+<span class="text-outline text-xs">00:04</span>
+</div>
+</div>
+<!-- Move 2 -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="text-outline">#02</span>
+<span class="font-bold text-secondary">○ VORTEX_99</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-2xs bg-secondary-container/40 text-secondary rounded font-bold">B2</span>
+<span class="text-outline text-xs">00:14</span>
+</div>
+</div>
+<!-- Move 3 -->
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-xs">
+<span class="text-outline">#03</span>
+<span class="font-bold text-primary-container">✕ CYBER_VIPER</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-2xs bg-primary-container/20 text-primary-container rounded font-bold">C3</span>
+<span class="text-outline text-xs">00:22</span>
+</div>
+</div>
+<!-- Move 4 Pending -->
+<div class="flex items-center justify-between p-space-xs rounded bg-primary-container/5 animate-pulse">
+<div class="flex items-center gap-space-xs">
+<span class="text-primary-container font-bold">#04</span>
+<span class="font-bold text-primary italic">AWAITING SELECTION...</span>
+</div>
+<span class="px-space-2xs bg-primary-container text-on-primary-container text-[10px] font-bold rounded">IN PROGRESS</span>
+</div>
+</div>
+</div>
+<!-- Tactics & Hotkeys Card -->
+<div class="bg-surface-container-low/60 rounded-xl p-space-md shadow-lg flex flex-col gap-space-xs">
+<span class="font-label-data-sm text-label-data-sm text-outline uppercase tracking-wider font-bold">TACTICAL CONTROLS</span>
+<div class="grid grid-cols-2 gap-space-xs font-label-data-sm text-label-data-sm">
+<div class="flex items-center justify-between p-space-2xs bg-surface-container rounded">
+<span class="text-on-surface-variant">Grid Assist</span>
+<span class="text-primary font-bold">ON</span>
+</div>
+<div class="flex items-center justify-between p-space-2xs bg-surface-container rounded">
+<span class="text-on-surface-variant">Auto-Ping</span>
+<span class="text-primary font-bold">ALT+P</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CRITICAL REQUIREMENT: EXACT BOTTOM-LEFT CORNER PROMINENT QUIT BUTTON -->
+<div class="w-full max-w-7xl mx-auto px-space-md pt-space-xl flex justify-start items-center">
+<button class="group relative px-space-lg py-space-sm bg-surface-container-low/90 hover:bg-error-container/40 backdrop-blur-xl rounded-lg shadow-[0_0_20px_rgba(147,0,10,0.4)] transition-all duration-300 flex items-center gap-space-sm" id="open-quit-modal" type="button">
+<!-- Glow ambient border layer -->
+<div class="absolute inset-0 rounded-lg bg-gradient-to-r from-error/30 to-error/10 opacity-60 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative z-10 flex items-center gap-space-xs">
+<span class="font-headline-sm text-lg text-error font-extrabold group-hover:scale-125 transition-transform">✕</span>
+<span class="font-headline-sm text-headline-sm text-error tracking-wider uppercase">QUIT GAME</span>
+</div>
+<div class="relative z-10 px-space-2xs py-0.5 bg-error-container text-on-error-container font-label-data-sm text-[10px] rounded uppercase font-bold">
+        -25 CR RISK
+      </div>
+</button>
+</div>
+<!-- SURRENDER / FORFEIT CONFIRMATION MODAL (Toggled via JS or shown on quit request) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-surface-container-lowest/80 backdrop-blur-2xl p-space-md transition-opacity duration-300 opacity-0 pointer-events-none" id="quit-modal">
+<div class="relative w-full max-w-xl bg-surface-container-low rounded-2xl shadow-[0_24px_48px_-12px_rgba(0,0,0,0.9),0_0_40px_-8px_rgba(255,180,171,0.2)] p-space-lg overflow-hidden transform scale-95 transition-transform duration-300" id="quit-modal-card">
+<!-- Top Cyber Warning Stripe -->
+<div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-error via-error-container to-error"></div>
+<!-- Header HUD Badge -->
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-error-container/50 text-error flex items-center justify-center shadow-[0_0_12px_rgba(255,180,171,0.4)]">
+<span class="material-symbols-outlined text-xl">warning</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-error tracking-wide uppercase">QUIT MATCH CONFIRMATION</h3>
+<span class="font-label-data-sm text-label-data-sm text-outline">TELEMETRY WARNING CODE: CR-SURRENDER-04</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded transition-colors" id="close-modal-x" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Dialogue Content -->
+<div class="mb-space-lg flex flex-col gap-space-sm bg-surface-container-lowest/60 p-space-md rounded-xl">
+<p class="font-body-lg text-body-lg text-on-surface">
+          Quit Match? Are you sure you want to surrender or abandon the active match?
+        </p>
+<div class="p-space-sm bg-error-container/20 rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error mt-0.5">report_problem</span>
+<div class="flex flex-col font-label-data-md text-label-data-md text-error">
+<span class="font-bold">CRITICAL WARNING:</span>
+<span>Leaving an active ranked match will result in an immediate forfeiture and a <strong class="underline decoration-error font-bold">-25 CR Rating penalty</strong> applied to your account status.</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-end gap-space-md">
+<button class="w-full sm:w-auto px-space-lg py-space-sm bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold rounded-lg shadow-[0_0_18px_rgba(0,242,254,0.45)] hover:bg-primary-fixed transition-all active:scale-95 flex items-center justify-center gap-space-xs" id="resume-match-btn" type="button">
+<span class="material-symbols-outlined text-base">swords</span>
+<span>RESUME COMBAT</span>
+</button>
+<button class="w-full sm:w-auto px-space-lg py-space-sm bg-error-container text-on-error-container hover:bg-error hover:text-on-error font-headline-sm text-headline-sm font-bold rounded-lg shadow-[0_0_18px_rgba(147,0,10,0.5)] transition-all active:scale-95 flex items-center justify-center gap-space-xs" id="confirm-surrender-btn" type="button">
+<span class="material-symbols-outlined text-base">flag</span>
+<span>YES, SURRENDER MATCH</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Vanilla Interaction Controller -->
+<script>
+    (function() {
+      // Countdown simulation
+      let countdown = 12;
+      const countdownEl = document.getElementById('turn-countdown');
+      const ringEl = document.getElementById('turn-ring');
+      
+      const timerInterval = setInterval(() => {
+        if (countdown > 0) {
+          countdown--;
+          if (countdownEl) countdownEl.textContent = countdown + 's';
+          if (ringEl) {
+            const offset = (100 - (countdown / 12) * 100);
+            ringEl.style.strokeDashoffset = offset;
+          }
+        } else {
+          countdown = 15; // Reset loop for demo dynamism
+        }
+      }, 1000);
+
+      // Match time ticker
+      let seconds = 27;
+      const matchTimerEl = document.getElementById('match-timer');
+      setInterval(() => {
+        seconds++;
+        const mins = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const secs = String(seconds % 60).padStart(2, '0');
+        if (matchTimerEl) matchTimerEl.textContent = `${mins}:${secs}`;
+      }, 1000);
+
+      // Quit Modal Toggle logic
+      const openBtn = document.getElementById('open-quit-modal');
+      const modal = document.getElementById('quit-modal');
+      const card = document.getElementById('quit-modal-card');
+      const closeX = document.getElementById('close-modal-x');
+      const resumeBtn = document.getElementById('resume-match-btn');
+      const surrenderBtn = document.getElementById('confirm-surrender-btn');
+
+      function openModal() {
+        if (!modal) return;
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100', 'pointer-events-auto');
+        if (card) {
+          card.classList.remove('scale-95');
+          card.classList.add('scale-100');
+        }
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100', 'pointer-events-auto');
+        if (card) {
+          card.classList.add('scale-95');
+          card.classList.remove('scale-100');
+        }
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openModal);
+      if (closeX) closeX.addEventListener('click', closeModal);
+      if (resumeBtn) resumeBtn.addEventListener('click', closeModal);
+      if (surrenderBtn) {
+        surrenderBtn.addEventListener('click', () => {
+          surrenderBtn.textContent = "FORFEITING MATCH...";
+          setTimeout(() => {
+            closeModal();
+            surrenderBtn.innerHTML = '<span class="material-symbols-outlined text-base">flag</span><span>YES, SURRENDER MATCH</span>';
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">TECHRONICS</span><span class="font-label-data-sm text-label-data-sm text-outline">V2.4.0 QUANTUM PROTOCOL</span></div><span class="font-label-data-sm text-label-data-sm text-on-surface-variant">© 2025 TECHRONICS BATTLE NETWORK. ALL TELEMETRY ENCRYPTED.</span></div></footer></body></html>

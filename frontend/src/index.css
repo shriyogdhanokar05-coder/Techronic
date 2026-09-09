@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121318;
+    color: #e3e1e9;
+    overscroll-behavior: none;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Cyber Reticle and Glow Utilities */
+.cyber-glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.45);
+}
+
+.cyber-glow-magenta {
+  box-shadow: 0 0 25px rgba(221, 183, 255, 0.35);
+}
+
+.cyber-matrix-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(224, 253, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(224, 253, 255, 0.05) 1px, transparent 1px);
+}
