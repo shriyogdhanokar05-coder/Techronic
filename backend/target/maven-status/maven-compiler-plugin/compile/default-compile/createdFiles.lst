@@ -1,4 +1,5 @@
 com\yourorg\appname\repository\MatchRecordRepository.class
+com\yourorg\appname\config\DatabaseConfig.class
 com\yourorg\appname\dto\response\ApiResponse$ApiResponseBuilder.class
 com\yourorg\appname\security\JwtAuthFilter.class
 com\yourorg\appname\config\SecurityConfig.class
