@@ -64,6 +64,17 @@ export function AuthProvider({ children }) {
     setUser(null);
   }, []);
 
+  const resetPassword = useCallback(async (resetData) => {
+    const data = await authService.resetPassword(resetData);
+    if (data && data.token) {
+      localStorage.setItem(TOKEN_STORAGE_KEY, data.token);
+      localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(data.user));
+      setToken(data.token);
+      setUser(data.user);
+    }
+    return data;
+  }, []);
+
   const refreshProfile = useCallback(async () => {
     if (!token) return;
     try {
@@ -82,6 +93,7 @@ export function AuthProvider({ children }) {
     isAuthenticated: !!token && !!user,
     login,
     register,
+    resetPassword,
     logout,
     refreshProfile,
     setUser,

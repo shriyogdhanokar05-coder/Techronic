@@ -4,7 +4,7 @@ import { ROUTES } from '../constants/routes';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
-  timeout: 3500,
+  timeout: 60000, // 60s to accommodate Render free-tier container wake-ups (cold starts take 35-50s) and mobile latency
   headers: {
     'Content-Type': 'application/json',
   },

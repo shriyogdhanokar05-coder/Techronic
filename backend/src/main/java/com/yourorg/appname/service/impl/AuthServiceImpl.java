@@ -2,12 +2,14 @@ package com.yourorg.appname.service.impl;
 
 import com.yourorg.appname.dto.request.LoginRequest;
 import com.yourorg.appname.dto.request.RegisterRequest;
+import com.yourorg.appname.dto.request.ResetPasswordRequest;
 import com.yourorg.appname.dto.response.AuthResponse;
 import com.yourorg.appname.dto.response.UserResponse;
 import com.yourorg.appname.entity.User;
 import com.yourorg.appname.exception.BadRequestException;
 import com.yourorg.appname.exception.ResourceNotFoundException;
 import com.yourorg.appname.mapper.UserMapper;
+import com.yourorg.appname.repository.MatchRecordRepository;
 import com.yourorg.appname.repository.UserRepository;
 import com.yourorg.appname.security.JwtUtil;
 import com.yourorg.appname.service.AuthService;
@@ -29,10 +31,12 @@ import java.util.UUID;
 public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
+    private final MatchRecordRepository matchRecordRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
     private final UserMapper userMapper;
+
 
     @Override
     @Transactional
@@ -140,4 +144,39 @@ public class AuthServiceImpl implements AuthService {
         Long rank = userRepository.findRankByCombatRating(user.getCombatRating());
         return userMapper.toUserResponse(user, rank);
     }
+
+    @Override
+    @Transactional
+    public AuthResponse resetPassword(ResetPasswordRequest request) {
+        String target = request.getUsername().trim();
+        User user = userRepository.findByUsername(target)
+                .or(() -> userRepository.findByEmail(target))
+                .orElseThrow(() -> new ResourceNotFoundException("No pilot found with callsign: " + target));
+
+        user.setPasswordHash(passwordEncoder.encode(request.getNewPassword()));
+        User savedUser = userRepository.save(user);
+
+        String token = jwtUtil.generateToken(savedUser.getUsername());
+        Long rank = userRepository.findRankByCombatRating(savedUser.getCombatRating());
+
+        return AuthResponse.builder()
+                .token(token)
+                .tokenType("Bearer")
+                .expiresIn(jwtUtil.getExpirationMs())
+                .user(userMapper.toUserResponse(savedUser, rank))
+                .build();
+    }
+
+    @Override
+    @Transactional
+    public void deleteUser(String username) {
+        String target = username.trim();
+        userRepository.findByUsername(target)
+                .or(() -> userRepository.findByEmail(target))
+                .ifPresent(u -> {
+                    matchRecordRepository.deleteMatchesByUserId(u.getId());
+                    userRepository.delete(u);
+                });
+    }
 }
+

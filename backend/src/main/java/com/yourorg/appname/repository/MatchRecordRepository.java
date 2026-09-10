@@ -21,4 +21,9 @@ public interface MatchRecordRepository extends JpaRepository<MatchRecord, Long> 
     Page<MatchRecord> findAllMatchesByUserId(@Param("userId") Long userId, Pageable pageable);
 
     Optional<MatchRecord> findTopByPlayer1IdOrPlayer2IdOrderByCreatedAtDesc(Long player1Id, Long player2Id);
+
+    @org.springframework.data.jpa.repository.Modifying
+    @Query("DELETE FROM MatchRecord m WHERE m.player1.id = :userId OR m.player2.id = :userId OR m.winner.id = :userId")
+    void deleteMatchesByUserId(@Param("userId") Long userId);
 }
+

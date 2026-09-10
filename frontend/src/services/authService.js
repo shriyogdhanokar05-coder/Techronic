@@ -15,4 +15,15 @@ export const authService = {
     const response = await apiClient.get('/auth/me');
     return response.data?.data;
   },
+
+  async resetPassword(data) {
+    const response = await apiClient.post('/auth/reset-password', data);
+    return response.data?.data;
+  },
+
+  async deleteUser(username) {
+    const response = await apiClient.delete(`/auth/user/${encodeURIComponent(username)}`);
+    return response.data;
+  },
 };
+
